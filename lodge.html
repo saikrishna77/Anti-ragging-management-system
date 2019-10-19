@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="font-awesome.min.css">
+<style>
+.lef1t{
+	margin-left: 10px;
+ border-radius: 6px;
+}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+.texte-hover{
+	background-color: red; 
+}
+</style>
+<body> 
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-red w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    
+    <a href="project.html" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+    <a href="lodge.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Enquiry</a>
+    <a href="commitee.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Committee</a>
+    
+    <a href="contact.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Contact Us</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 1</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 2</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 3</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 4</a>
+  </div>
+
+</div >
+
+<!-- Header --><br><br><br><br>
+	<center><form style="border: 1px solid black;border-radius: 5px;border-top-width:5px ;border-top-color:red;margin-top: 10% max-height:820px;max-width:420px;box-shadow:  5px 10px 18px #888888;"><br>
+		<center><h3>FIR(First Information Report)</h3></center><br>
+		<label >Complaint Name:</label><input class="lef1t" type="text" name="Complaint" ><br><br>
+		<label class="lef1t" style="margin-left: 25px">Victim Name:</label><input  class="lef1t" type="text" name="victim_name"><br><br>
+		<label >  Victim Address:    </label><input class="lef1t" type="text" name="address"><br><br>
+		<label style="margin-left: 22px"> Victim email:</label><input type="text" class="lef1t" name="email"><br><br>
+		<label>Victim Number:    </label><input type="number" class="lef1t" name="mobile"><br><br>
+		<label style="margin-left: 12%">Pincode: </label><input class="lef1t" type="number" name="pincode"><br><br>
+		<label >Incident Details:</label>
+        <textarea class="text1"rows="4" cols="30"></textarea>
+		<br><br>
+		<label style="margin-left: 20%">File:</label><input type="file" class="lef1t" name="file"><br><br>
+		<input class="texte"type="submit"  value="Submit"><br><br>
+	</form></center>
+	<br><br>
+</div>
+
+<div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+    <h1 class="w3-margin w3-xlarge">Ragging does not break the ice, it breaks lives, careers and families!</h1>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">  
+  
+ <p>Website developed by S.Saikrishna</p>
+</footer>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>
